@@ -16,7 +16,7 @@ public class DagligFast extends Ordination {
         doser[0] = createDosis(LocalTime.of(6, 0), morgenAntal);
         doser[1] = createDosis(LocalTime.of(12, 0), middagAntal);
         doser[2] = createDosis(LocalTime.of(18, 0), aftenAntal);
-        doser[4] = createDosis(LocalTime.of(0, 0), natAntal);
+        doser[3] = createDosis(LocalTime.of(0, 0), natAntal);
     }
 
     private Dosis createDosis(LocalTime tid, double antal) {

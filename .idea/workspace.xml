@@ -4,46 +4,58 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c894035d-f16d-41bd-8688-468d547e18a8" name="Changes" comment="" />
+    <list default="true" id="c894035d-f16d-41bd-8688-468d547e18a8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Medicinordination/Medicinordination.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Medicinordination/Medicinordination.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Medicinordination/src/ordination/DagligSkaev.java" beforeDir="false" afterPath="$PROJECT_DIR$/Medicinordination/src/ordination/DagligSkaev.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Medicinordination/src/ordination/Dosis.java" beforeDir="false" afterPath="$PROJECT_DIR$/Medicinordination/src/ordination/Dosis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Medicinordination/src/ordination/Ordination.java" beforeDir="false" afterPath="$PROJECT_DIR$/Medicinordination/src/ordination/Ordination.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Medicinordination/src/ordination/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Medicinordination/src/ordination/Patient.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "andr265i"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;andr265i&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/andr265i/Testprojektmedicinordination.git",
-    "accountId": "6554ba46-1e5a-494d-9354-f275222ae2af"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/andr265i/Testprojektmedicinordination.git&quot;,
+    &quot;accountId&quot;: &quot;ad81a7e6-4952-4bff-a061-02dfb4b71b9e&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2uFn5XWE7n5fFHgC7VvKbPvyrOy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\André\Desktop\skole\Testprojektmedicinordination\Medicinordination\src" />

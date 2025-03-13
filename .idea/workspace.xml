@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c894035d-f16d-41bd-8688-468d547e18a8" name="Changes" comment="abstrakte metoder i daglig skæv" />
+    <list default="true" id="c894035d-f16d-41bd-8688-468d547e18a8" name="Changes" comment="små rettelser" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,6 +75,7 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="sammenhæng mellem patient, ordination og lægemiddel + daglig skæv" />
     <MESSAGE value="ordinationPNAnvendt() og opretDagligSkaevOrdination () i controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="ordinationPNAnvendt() og opretDagligSkaevOrdination () i controller" />
+    <MESSAGE value="små rettelser" />
+    <option name="LAST_COMMIT_MESSAGE" value="små rettelser" />
   </component>
 </project>

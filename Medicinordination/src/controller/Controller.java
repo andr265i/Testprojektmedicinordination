@@ -71,10 +71,11 @@ public abstract class Controller {
 	public static DagligSkaev opretDagligSkaevOrdination(LocalDate startDen,
 			LocalDate slutDen, Patient patient, Laegemiddel laegemiddel,
 			LocalTime[] klokkeSlet, double[] antalEnheder) {
-		if (startDen.isBefore(slutDen) || klokkeSlet.length != antalEnheder.length){
+
+		if (startDen.isBefore(slutDen) && klokkeSlet.length == antalEnheder.length){
 			return new DagligSkaev(startDen, slutDen, patient, laegemiddel, klokkeSlet, antalEnheder);
 		} else {
-			throw new IllegalArgumentException();
+			throw new IllegalArgumentException("startDato er efter slutDato eller der ikke givet lige mange tider og antal enheder");
 		}
 	}
 
@@ -88,7 +89,7 @@ public abstract class Controller {
 		if (dato.isAfter(ordination.getStartDen().minusDays(1)) && dato.isBefore(ordination.getSlutDen().plusDays(1))){
 			ordination.givDosis(dato);
 		} else {
-			throw new IllegalArgumentException();
+			throw new IllegalArgumentException("Dato ikke inden for ordinations periode");
 		}
 	}
 
@@ -109,9 +110,18 @@ public abstract class Controller {
 	 * Pre: laegemiddel er ikke null
 	 */
 	public static int antalOrdinationerPrVægtPrLægemiddel(double vægtStart,
-			double vægtSlut, Laegemiddel laegemiddel) {
-		// TODO
-		return 0;
+														  double vægtSlut, Laegemiddel laegemiddel) {
+		int antal = 0;
+
+		for (Patient p : storage.getAllPatienter()) {
+			for (Ordination o : p.getOrdinationer()) {
+				if ((p.getVaegt() >= vægtStart && p.getVaegt() <= vægtSlut) && o.getLaegemiddel() == laegemiddel) {
+					antal++;
+				}
+			}
+		}
+
+		return antal;
 	}
 
 	public static List<Patient> getAllPatienter() {

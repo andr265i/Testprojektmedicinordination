@@ -71,8 +71,11 @@ public abstract class Controller {
 	public static DagligSkaev opretDagligSkaevOrdination(LocalDate startDen,
 			LocalDate slutDen, Patient patient, Laegemiddel laegemiddel,
 			LocalTime[] klokkeSlet, double[] antalEnheder) {
-		// TODO
-		return null;
+		if (startDen.isBefore(slutDen) || klokkeSlet.length != antalEnheder.length){
+			return new DagligSkaev(startDen, slutDen, patient, laegemiddel, klokkeSlet, antalEnheder);
+		} else {
+			throw new IllegalArgumentException();
+		}
 	}
 
 	/**
@@ -82,7 +85,11 @@ public abstract class Controller {
 	 * Pre: ordination og dato er ikke null
 	 */
 	public static void ordinationPNAnvendt(PN ordination, LocalDate dato) {
-		// TODO
+		if (dato.isAfter(ordination.getStartDen().minusDays(1)) && dato.isBefore(ordination.getSlutDen().plusDays(1))){
+			ordination.givDosis(dato);
+		} else {
+			throw new IllegalArgumentException();
+		}
 	}
 
 	/**

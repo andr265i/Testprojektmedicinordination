@@ -22,9 +22,18 @@ public abstract class Controller {
 	 * @return opretter og returnerer en PN ordination.
 	 */
 	public static PN opretPNOrdination(LocalDate startDen, LocalDate slutDen,
-			Patient patient, Laegemiddel laegemiddel, double antal) {
-		// TODO
-		return null;
+									   Patient patient, Laegemiddel laegemiddel, double antal) {
+
+		PN pn;
+
+		if (startDen.isBefore(slutDen)) {
+			pn = new PN(startDen,slutDen,patient,laegemiddel,antal);
+
+		} else {
+			throw new IllegalArgumentException("startDato er efter slutDato");
+		}
+
+		return pn;
 	}
 
 	/**
@@ -37,8 +46,18 @@ public abstract class Controller {
 			LocalDate slutDen, Patient patient, Laegemiddel laegemiddel,
 			double morgenAntal, double middagAntal, double aftenAntal,
 			double natAntal) {
-		// TODO
-		return null;
+		
+		DagligFast dagligFast;
+		
+		if(startDen.isBefore(slutDen)) {
+			dagligFast = new DagligFast(startDen,slutDen,patient,laegemiddel,morgenAntal,middagAntal,aftenAntal,
+					natAntal);
+		}
+		else {
+			throw new  IllegalArgumentException ("startDato er efter slutDato");
+		}
+
+		return dagligFast;
 	}
 
 	/**

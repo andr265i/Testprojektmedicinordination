@@ -6,9 +6,7 @@ public class Dosis {
     private LocalTime tid;
     private double antal;
 
-    //skal public væk?? og hvad med super? Hvor kommer den fra?
-    public Dosis(LocalTime tid, double antal) {
-        super();
+    Dosis(LocalTime tid, double antal) {
         this.tid = tid;
         this.antal = antal;
     }

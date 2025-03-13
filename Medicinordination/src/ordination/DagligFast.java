@@ -28,11 +28,6 @@ public class DagligFast extends Ordination {
         return doser.clone();
     }
 
-    public void removeDosis(DagligFast dagligFast) { //Skal den fjerne alle doser eller skal man kunne fjerne 1?
-        if (doser[0] != null) {
-            Arrays.fill(doser, null);
-        }
-    }
 
     @Override
     public double samletDosis() {

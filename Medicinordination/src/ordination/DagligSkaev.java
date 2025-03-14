@@ -8,6 +8,14 @@ public class DagligSkaev extends Ordination{
 
     private final ArrayList<Dosis> doser = new ArrayList<>();
 
+    /**
+     * Initialiserer en daglig skæv ordination med start dato, slut dato, patient,
+     * lægemiddel, et array af tid og antalEnheder.
+     * Pre: startDen, slutDen, patient og laegemiddel er ikke null
+     * Pre: alle tal i antalEnheder > 0
+     * Pre: startdato er før slutdato
+     * Pre: antallet af elementer i klokkeSlet og antalEnheder er ens
+     */
     public DagligSkaev(LocalDate startDen, LocalDate slutDen, Patient patient, Laegemiddel laegemiddel,
                        LocalTime[] klokkeSlet, double[] antalEnheder) {
         super(startDen, slutDen, patient, laegemiddel);

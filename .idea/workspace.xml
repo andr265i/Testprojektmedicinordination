@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c894035d-f16d-41bd-8688-468d547e18a8" name="Changes" comment="små rettelser">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
-    <list default="true" id="c894035d-f16d-41bd-8688-468d547e18a8" name="Changes" comment="små rettelser">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Medicinordination/src/ordination/DagligFast.java" beforeDir="false" afterPath="$PROJECT_DIR$/Medicinordination/src/ordination/DagligFast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Medicinordination/gui/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Medicinordination/gui/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Medicinordination/src/ordination/DagligSkaev.java" beforeDir="false" afterPath="$PROJECT_DIR$/Medicinordination/src/ordination/DagligSkaev.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Medicinordination/src/ordination/PN.java" beforeDir="false" afterPath="$PROJECT_DIR$/Medicinordination/src/ordination/PN.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +47,7 @@
   "keyToString": {
     "Application.App.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "dev",
+    "git-widget-placeholder": "main",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",

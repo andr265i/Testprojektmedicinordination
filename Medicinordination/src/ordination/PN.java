@@ -26,12 +26,13 @@ public class PN extends Ordination {
      * Registrerer at der er givet en dosis paa dagen givesDen
      * Returnerer true hvis givesDen er inden for ordinationens gyldighedsperiode og datoen huskes
      * Retrurner false ellers og datoen givesDen ignoreres
+     *
      * @param givesDen
      * @return
      */
     public boolean givDosis(LocalDate givesDen) {
         boolean gyldigDosis = false;
-        if (givesDen.isAfter(super.getStartDen()) && givesDen.isBefore(super.getSlutDen())) {
+        if (givesDen.isAfter(super.getStartDen().minusDays(1)) && givesDen.isBefore(super.getSlutDen().plusDays(1))) {
             gyldigDosis = true;
             datoListe.add(givesDen);
         }
@@ -39,7 +40,7 @@ public class PN extends Ordination {
     }
 
     public double doegnDosis() {
-        double dosis = (getAntalGangeGivet() * antalEnheder) / (ChronoUnit.DAYS.between(super.getStartDen(),super.getSlutDen()));
+        double dosis = (getAntalGangeGivet() * antalEnheder) / antalDage();
         return dosis;
     }
 
@@ -59,19 +60,23 @@ public class PN extends Ordination {
         LocalDate min = LocalDate.MAX;
         LocalDate max = LocalDate.MIN;
 
-        for (LocalDate d : datoListe) {
-            if (d.isBefore(min)) {
-                min = d;
+        if (!datoListe.isEmpty()) {
+            for (LocalDate d : datoListe) {
+                if (d.isBefore(min)) {
+                    min = d;
+                }
+                if (d.isAfter(max)) {
+                    max = d;
+                }
             }
-            if (d.isAfter(max)) {
-                max = d;
-            }
+            return (int) ChronoUnit.DAYS.between(min, max) + 1;
         }
-        return (int) ChronoUnit.DAYS.between(min, max) + 1;
+        return 0;
     }
 
     /**
      * Returnerer antal gange ordinationen er anvendt
+     *
      * @return
      */
     public int getAntalGangeGivet() {

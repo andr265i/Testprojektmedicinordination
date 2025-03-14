@@ -21,8 +21,7 @@ public abstract class Controller {
 	 * Pre: antal > 0
 	 * @return opretter og returnerer en PN ordination.
 	 */
-	public static PN opretPNOrdination(LocalDate startDen, LocalDate slutDen,
-									   Patient patient, Laegemiddel laegemiddel, double antal) {
+	public static PN opretPNOrdination(LocalDate startDen, LocalDate slutDen, Patient patient, Laegemiddel laegemiddel, double antal) {
 
 		PN pn;
 
@@ -119,8 +118,7 @@ public abstract class Controller {
 	 * ordinationer.
 	 * Pre: laegemiddel er ikke null
 	 */
-	public static int antalOrdinationerPrVægtPrLægemiddel(double vægtStart,
-														  double vægtSlut, Laegemiddel laegemiddel) {
+	public static int antalOrdinationerPrVægtPrLægemiddel(double vægtStart, double vægtSlut, Laegemiddel laegemiddel) {
 		int antal = 0;
 
 		for (Patient p : storage.getAllPatienter()) {

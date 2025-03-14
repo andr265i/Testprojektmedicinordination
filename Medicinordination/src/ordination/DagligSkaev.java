@@ -33,13 +33,6 @@ public class DagligSkaev extends Ordination{
         doser.add(dosis);
     }
 
-    //ved ikke om skal slettes
-    public void removeDosis (Dosis dosis){
-        if (doser.contains(dosis)){
-            doser.add(dosis);
-        }
-    }
-
     //metoder
     @Override
     public double samletDosis() {

@@ -38,7 +38,6 @@ public class DagligFast extends Ordination {
 
     @Override
     public double samletDosis() {
-
         return doegnDosis() * antalDage();
     }
 
@@ -54,7 +53,6 @@ public class DagligFast extends Ordination {
 
     @Override
     public String getType() {
-
         return "Daglig Fast";
     }
 }

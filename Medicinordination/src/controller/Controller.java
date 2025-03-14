@@ -18,7 +18,7 @@ public abstract class Controller {
 	 * Hvis startDato er efter slutDato kastes en IllegalArgumentException og
 	 * ordinationen oprettes ikke
 	 * Pre: startDen, slutDen, patient og laegemiddel er ikke null
-	 * Pre: antal >= 0
+	 * Pre: antal > 0
 	 * @return opretter og returnerer en PN ordination.
 	 */
 	public static PN opretPNOrdination(LocalDate startDen, LocalDate slutDen,

@@ -14,7 +14,7 @@ public class PN extends Ordination {
      * Initialiserer en daglig fast ordination med start dato, slut dato, patient,
      * lægemiddel og antal enheder.
      * Pre: startDen, slutDen, patient og laegemiddel er ikke null
-     * Pre: antal >= 0
+     * Pre: antal > 0
      * Pre: startdato er før slutdato
      */
     public PN(LocalDate startDen, LocalDate slutDen, Patient patient, Laegemiddel laegemiddel, double antalEnheder) {
@@ -26,12 +26,13 @@ public class PN extends Ordination {
      * Registrerer at der er givet en dosis paa dagen givesDen
      * Returnerer true hvis givesDen er inden for ordinationens gyldighedsperiode og datoen huskes
      * Retrurner false ellers og datoen givesDen ignoreres
+     *
      * @param givesDen
      * @return
      */
     public boolean givDosis(LocalDate givesDen) {
         boolean gyldigDosis = false;
-        if (givesDen.isAfter(super.getStartDen()) && givesDen.isBefore(super.getSlutDen())) {
+        if (givesDen.isAfter(super.getStartDen().minusDays(1)) && givesDen.isBefore(super.getSlutDen().plusDays(1))) {
             gyldigDosis = true;
             datoListe.add(givesDen);
         }
@@ -39,7 +40,7 @@ public class PN extends Ordination {
     }
 
     public double doegnDosis() {
-        double dosis = (getAntalGangeGivet() * antalEnheder) / (ChronoUnit.DAYS.between(super.getStartDen(),super.getSlutDen()));
+        double dosis = (getAntalGangeGivet() * antalEnheder) / antalDage();
         return dosis;
     }
 
@@ -54,24 +55,32 @@ public class PN extends Ordination {
         return samletDosis;
     }
 
+    /**
+     * Antal hele dage mellem første og sidste givning. Begge dage inklusive.
+     * @return antal dage ordinationen er givet inden for
+     */
     @Override
     public int antalDage() {
         LocalDate min = LocalDate.MAX;
         LocalDate max = LocalDate.MIN;
 
-        for (LocalDate d : datoListe) {
-            if (d.isBefore(min)) {
-                min = d;
+        if (!datoListe.isEmpty()) {
+            for (LocalDate d : datoListe) {
+                if (d.isBefore(min)) {
+                    min = d;
+                }
+                if (d.isAfter(max)) {
+                    max = d;
+                }
             }
-            if (d.isAfter(max)) {
-                max = d;
-            }
+            return (int) ChronoUnit.DAYS.between(min, max) + 1;
         }
-        return (int) ChronoUnit.DAYS.between(min, max) + 1;
+        return 0;
     }
 
     /**
      * Returnerer antal gange ordinationen er anvendt
+     *
      * @return
      */
     public int getAntalGangeGivet() {

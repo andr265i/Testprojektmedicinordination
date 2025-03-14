@@ -16,8 +16,7 @@ public class DagligSkaev extends Ordination{
      * Pre: startdato er før slutdato
      * Pre: antallet af elementer i klokkeSlet og antalEnheder er ens
      */
-    public DagligSkaev(LocalDate startDen, LocalDate slutDen, Patient patient, Laegemiddel laegemiddel,
-                       LocalTime[] klokkeSlet, double[] antalEnheder) {
+    public DagligSkaev(LocalDate startDen, LocalDate slutDen, Patient patient, Laegemiddel laegemiddel, LocalTime[] klokkeSlet, double[] antalEnheder) {
         super(startDen, slutDen, patient, laegemiddel);
         for (int i = 0; i < antalEnheder.length; i++) {
             opretDosis(klokkeSlet[i],antalEnheder[i]);
@@ -32,13 +31,6 @@ public class DagligSkaev extends Ordination{
     private void opretDosis(LocalTime tid, double antal) {
         Dosis dosis = new Dosis(tid, antal);
         doser.add(dosis);
-    }
-
-    //ved ikke om skal slettes
-    public void removeDosis (Dosis dosis){
-        if (doser.contains(dosis)){
-            doser.add(dosis);
-        }
     }
 
     //metoder

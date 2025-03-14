@@ -8,6 +8,13 @@ public class DagligFast extends Ordination {
 
     private final Dosis[] doser = new Dosis[4];
 
+    /**
+     * Initialiserer en daglig fast ordination med start dato, slut dato, patient,
+     * lægemiddel og antal morgen, middag, aften og nat.
+     * Pre: startDen, slutDen, patient og laegemiddel er ikke null
+     * Pre: margenAntal, middagAntal, aftanAntal, natAntal >= 0
+     * Pre: startdato er før slutdato
+     */
     public DagligFast(LocalDate startDen, LocalDate slutDen, Patient patient,
                       Laegemiddel laegemiddel, double morgenAntal,
                       double middagAntal, double aftenAntal, double natAntal) {
@@ -16,7 +23,7 @@ public class DagligFast extends Ordination {
         doser[0] = createDosis(LocalTime.of(6, 0), morgenAntal);
         doser[1] = createDosis(LocalTime.of(12, 0), middagAntal);
         doser[2] = createDosis(LocalTime.of(18, 0), aftenAntal);
-        doser[4] = createDosis(LocalTime.of(0, 0), natAntal);
+        doser[3] = createDosis(LocalTime.of(0, 0), natAntal);
     }
 
     private Dosis createDosis(LocalTime tid, double antal) {

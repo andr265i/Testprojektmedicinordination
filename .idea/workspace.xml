@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c894035d-f16d-41bd-8688-468d547e18a8" name="Changes" comment="abstrakte metoder i daglig skæv">
+    <list default="true" id="c894035d-f16d-41bd-8688-468d547e18a8" name="Changes" comment="små rettelser">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Medicinordination/src/ordination/DagligFast.java" beforeDir="false" afterPath="$PROJECT_DIR$/Medicinordination/src/ordination/DagligFast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Medicinordination/gui/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Medicinordination/gui/App.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +17,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,8 +45,9 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -56,12 +59,27 @@
       <recent name="C:\Users\André\Desktop\skole\Testprojektmedicinordination\Medicinordination\src" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.App" />
+      <module name="Medicinordination" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="sammenhæng mellem patient, ordination og lægemiddel + daglig skæv" />
     <MESSAGE value="ordinationPNAnvendt() og opretDagligSkaevOrdination () i controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="ordinationPNAnvendt() og opretDagligSkaevOrdination () i controller" />
+    <MESSAGE value="små rettelser" />
+    <option name="LAST_COMMIT_MESSAGE" value="små rettelser" />
   </component>
 </project>

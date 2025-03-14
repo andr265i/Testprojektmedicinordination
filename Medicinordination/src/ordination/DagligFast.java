@@ -8,6 +8,13 @@ public class DagligFast extends Ordination {
 
     private final Dosis[] doser = new Dosis[4];
 
+    /**
+     * Initialiserer en daglig fast ordination med start dato, slut dato, patient,
+     * lægemiddel og antal morgen, middag, aften og nat.
+     * Pre: startDen, slutDen, patient og laegemiddel er ikke null
+     * Pre: margenAntal, middagAntal, aftanAntal, natAntal >= 0
+     * Pre: startdato er før slutdato
+     */
     public DagligFast(LocalDate startDen, LocalDate slutDen, Patient patient,
                       Laegemiddel laegemiddel, double morgenAntal,
                       double middagAntal, double aftenAntal, double natAntal) {

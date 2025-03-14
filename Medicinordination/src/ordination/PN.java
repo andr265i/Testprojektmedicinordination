@@ -10,6 +10,12 @@ public class PN extends Ordination {
     private double antalEnheder;
     private List<LocalDate> datoListe = new ArrayList<>();
 
+    /**
+     * Initialiserer en daglig fast ordination med start dato, slut dato, patient,
+     * lægemiddel og antal morgen, middag, aften og nat.
+     * Pre: startDen, slutDen, patient og laegemiddel er ikke null
+     * Pre: antal >= 0
+     */
     public PN(LocalDate startDen, LocalDate slutDen, Patient patient, Laegemiddel laegemiddel, double antalEnheder) {
         super(startDen, slutDen, patient, laegemiddel);
         this.antalEnheder = antalEnheder;

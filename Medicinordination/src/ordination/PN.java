@@ -14,7 +14,7 @@ public class PN extends Ordination {
      * Initialiserer en daglig fast ordination med start dato, slut dato, patient,
      * lægemiddel og antal enheder.
      * Pre: startDen, slutDen, patient og laegemiddel er ikke null
-     * Pre: antal >= 0
+     * Pre: antal > 0
      * Pre: startdato er før slutdato
      */
     public PN(LocalDate startDen, LocalDate slutDen, Patient patient, Laegemiddel laegemiddel, double antalEnheder) {
@@ -54,6 +54,10 @@ public class PN extends Ordination {
         return samletDosis;
     }
 
+    /**
+     * Antal hele dage mellem første og sidste givning. Begge dage inklusive.
+     * @return antal dage ordinationen er givet inden for
+     */
     @Override
     public int antalDage() {
         LocalDate min = LocalDate.MAX;

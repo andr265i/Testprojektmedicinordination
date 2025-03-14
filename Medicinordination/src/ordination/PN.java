@@ -40,8 +40,11 @@ public class PN extends Ordination {
     }
 
     public double doegnDosis() {
-        double dosis = (getAntalGangeGivet() * antalEnheder) / antalDage();
-        return dosis;
+        if (antalDage() != 0) {
+            return (getAntalGangeGivet() * antalEnheder) / antalDage();
+        } else {
+            return 0;
+        }
     }
 
     @Override

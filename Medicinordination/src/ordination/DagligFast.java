@@ -26,7 +26,9 @@ public class DagligFast extends Ordination {
         doser[3] = createDosis(LocalTime.of(0, 0), natAntal);
     }
 
-    private Dosis createDosis(LocalTime tid, double antal) {
+
+
+    public Dosis createDosis(LocalTime tid, double antal) {
         Dosis dosis = new Dosis(tid, antal);
         return dosis;
     }

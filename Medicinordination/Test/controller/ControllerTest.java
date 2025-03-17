@@ -1,5 +1,6 @@
 package controller;
 
+import ordination.DagligFast;
 import ordination.Laegemiddel;
 import ordination.PN;
 import ordination.Patient;
@@ -40,16 +41,56 @@ class ControllerTest {
         assertEquals(exception1.getMessage(), "startDato skal være før slutDato");
     }
 
+    // TC29
     @Test
     void opretDagligFastOrdination() {
+        DagligFast dagligFast = Controller.opretDagligFastOrdination(LocalDate.of(2025,3,14),LocalDate.of(2025,3,17),patient,laegemiddel,2,0,1,1);
+        assertNotNull(dagligFast);
+    }
+
+    // TC30
+    @Test
+    void opretDaligFastOrdination2(){
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> Controller.opretDagligFastOrdination(LocalDate.of(2025,3,17),LocalDate.of(2025,3,14),patient,laegemiddel,2,0,1,1));
+
+        assertEquals(exception.getMessage(),"startDato skal være før slutDato");
     }
 
     @Test
     void opretDagligSkaevOrdination() {
     }
 
+    // TC40
     @Test
-    void ordinationPNAnvendt() {
+    void ordinationPNAnvendt1() {
+        PN pn = new PN(LocalDate.of(2025,3,13),LocalDate.of(2025,3,15),patient,laegemiddel,2);
+        Controller.ordinationPNAnvendt(pn,LocalDate.of(2025,3,15));
+        assertEquals(LocalDate.of(2025,3,15),pn.getDatoListe().getLast());
+    }
+
+    // TC41
+    @Test
+    void ordinationPNAnvendt2() {
+        PN pn = new PN(LocalDate.of(2025,3,13),LocalDate.of(2025,3,13),patient,laegemiddel,2);
+        Controller.ordinationPNAnvendt(pn,LocalDate.of(2025,3,13));
+        assertEquals(LocalDate.of(2025,3,13),pn.getDatoListe().getLast());
+
+    }
+
+    // TC42
+    @Test
+    void ordinationPNAnvendt3() {
+        PN pn = new PN(LocalDate.of(2025,3,13),LocalDate.of(2025,3,15),patient,laegemiddel,2);
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> Controller.ordinationPNAnvendt(pn,LocalDate.of(2025,3,12)));
+        assertEquals(exception.getMessage(),"Dato skal være inden for ordinations periode");
+    }
+
+    // TC43
+    @Test
+    void ordinationPNAnvendt4() {
+        PN pn = new PN(LocalDate.of(2025,3,13),LocalDate.of(2025,3,13),patient,laegemiddel,2);
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> Controller.ordinationPNAnvendt(pn,LocalDate.of(2025,3,14)));
+        assertEquals(exception.getMessage(),"Dato skal være inden for ordinations periode");
     }
 
     //TC34

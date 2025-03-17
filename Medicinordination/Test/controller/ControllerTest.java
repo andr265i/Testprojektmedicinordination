@@ -1,15 +1,13 @@
 package controller;
 
-import ordination.DagligFast;
-import ordination.Laegemiddel;
-import ordination.PN;
-import ordination.Patient;
+import ordination.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import storage.Storage;
 
 import java.awt.*;
 import java.time.LocalDate;
+import java.time.LocalTime;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -56,8 +54,44 @@ class ControllerTest {
         assertEquals(exception.getMessage(),"startDato skal være før slutDato");
     }
 
+    //TC31
     @Test
     void opretDagligSkaevOrdination() {
+        LocalTime[] klokkeslet = {LocalTime.of(10,30),LocalTime.of(14,0), LocalTime.of
+                (22,0)};
+        double[] antalEnheder = {2,1,4};
+        DagligSkaev dagligSkaev = Controller.opretDagligSkaevOrdination(LocalDate.of(2025,3,14),
+                LocalDate.of(2025,3,17),patient,laegemiddel,klokkeslet,antalEnheder);
+        assertNotNull(dagligSkaev);
+    }
+
+    //TC32
+    @Test
+    void opretDagligSkaevOrdination2() {
+        LocalTime[] klokkeslet = {LocalTime.of(10,30),LocalTime.of(14,0), LocalTime.of
+                (22,0)};
+        double[] antalEnheder = {2,1,4};
+        Exception exception =assertThrows(IllegalArgumentException.class, () -> {
+            Controller.opretDagligSkaevOrdination(LocalDate.of(2025,3,17),LocalDate.of(2025,3,14)
+                    ,patient,laegemiddel,klokkeslet,antalEnheder);
+        });
+        assertEquals(exception.getMessage(),"startDato skal være før slutDato eller der ikke givet lige mange tider" +
+                " og antal enheder");
+    }
+
+    //TC33
+    @Test
+    void opretDagligSkaevOrdination3() {
+        LocalTime[] klokkeslet = {LocalTime.of(10,30),LocalTime.of(14,0), LocalTime.of
+                (22,0)};
+        double[] antalEnheder = {2,1,4,3};
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            Controller.opretDagligSkaevOrdination(LocalDate.of(2025,3,14),LocalDate.of
+                            (2025,3,17)
+                    ,patient,laegemiddel,klokkeslet,antalEnheder);
+        });
+        assertEquals(exception.getMessage(),"startDato skal være før slutDato eller der ikke givet lige mange " +
+                "tider og antal enheder");
     }
 
     // TC40
@@ -132,7 +166,61 @@ class ControllerTest {
         assertEquals(900,Controller.anbefaletDosisPrDoegn(patient,laegemiddel));
     }
 
+    //TC44
     @Test
     void antalOrdinationerPrVægtPrLægemiddel() {
+        Patient patient1 = new Patient("123456-7890","Hans Hansen",70);
+        Patient patient3 = new Patient("123456-7890", "Jens Hansen", 81);
+        patient.setVaegt(71);
+
+        Ordination ordination1 = Controller.opretPNOrdination(LocalDate.of(2025,3,13),LocalDate.of(2025,3,
+                15),patient1,laegemiddel,2);
+
+        Ordination ordination2 = Controller.opretPNOrdination(LocalDate.of(2025,3,13),LocalDate.of(2025,3,
+                15),patient,laegemiddel,2);
+
+        Ordination ordination3 = Controller.opretPNOrdination(LocalDate.of(2025,3,13),LocalDate.of(2025,3,
+                15),patient3,laegemiddel,2);
+
+        assertEquals(2,Controller.antalOrdinationerPrVægtPrLægemiddel(60,80,laegemiddel));
+
+    }
+
+    //TC45
+    @Test
+    void antalOrdinationerPrVægtPrLægemiddel2() {
+        Patient patient1 = new Patient("123456-7890","Hans Hansen",70);
+        Patient patient3 = new Patient("123456-7890", "Jens Hansen", 81);
+        patient.setVaegt(71);
+
+        Ordination ordination1 = Controller.opretPNOrdination(LocalDate.of(2025,3,13),LocalDate.of(2025,3,
+                15),patient1,laegemiddel,2);
+
+        Ordination ordination2 = Controller.opretPNOrdination(LocalDate.of(2025,3,13),LocalDate.of(2025,3,
+                15),patient,laegemiddel,2);
+
+        Ordination ordination3 = Controller.opretPNOrdination(LocalDate.of(2025,3,13),LocalDate.of(2025,3,
+                15),patient3,laegemiddel,2);
+
+        assertEquals(0,Controller.antalOrdinationerPrVægtPrLægemiddel(20,50,laegemiddel));
+    }
+
+    //TC46
+    @Test
+    void antalOrdinationerPrVægtPrLægemiddel3() {
+        Patient patient1 = new Patient("123456-7890","Hans Hansen",70);
+        Patient patient3 = new Patient("123456-7890", "Jens Hansen", 81);
+        patient.setVaegt(71);
+
+        Ordination ordination1 = Controller.opretPNOrdination(LocalDate.of(2025,3,13),LocalDate.of(2025,3,
+                15),patient1,laegemiddel,2);
+
+        Ordination ordination2 = Controller.opretPNOrdination(LocalDate.of(2025,3,13),LocalDate.of(2025,3,
+                15),patient,laegemiddel,2);
+
+        Ordination ordination3 = Controller.opretPNOrdination(LocalDate.of(2025,3,13),LocalDate.of(2025,3,
+                15),patient3,laegemiddel,2);
+
+        assertEquals(0,Controller.antalOrdinationerPrVægtPrLægemiddel(50,20,laegemiddel));
     }
 }

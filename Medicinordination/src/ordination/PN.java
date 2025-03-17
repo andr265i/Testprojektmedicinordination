@@ -60,7 +60,7 @@ public class PN extends Ordination {
 
     /**
      * Antal hele dage mellem første og sidste givning. Begge dage inklusive.
-     * @return antal dage ordinationen er givet inden for
+     * @return antal dage ordinationen er givet inden for. Hvis datoListe er tom returnere 0
      */
     @Override
     public int antalDage() {

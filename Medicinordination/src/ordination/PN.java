@@ -95,4 +95,7 @@ public class PN extends Ordination {
         return antalEnheder;
     }
 
+    public List<LocalDate> getDatoListe() {
+        return new ArrayList<>(datoListe);
+    }
 }

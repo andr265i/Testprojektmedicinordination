@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c894035d-f16d-41bd-8688-468d547e18a8" name="Changes" comment="små rettelser">
-      <change afterPath="$PROJECT_DIR$/Medicinordination/Test/ordination/DagligFastTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Medicinordination/Test/ordination/DosisTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Medicinordination/Medicinordination.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Medicinordination/Medicinordination.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Medicinordination/src/ordination/DagligFast.java" beforeDir="false" afterPath="$PROJECT_DIR$/Medicinordination/src/ordination/DagligFast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Medicinordination/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Medicinordination/controller/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Medicinordination/ordination/DagligFast.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Medicinordination/ordination/DagligFast.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Medicinordination/Test/controller/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Medicinordination/Test/controller/ControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +62,7 @@
     "JUnit.DagligFastTest.samletDosis.executor": "Run",
     "JUnit.DagligFastTest.samletDosis1dag.executor": "Run",
     "JUnit.DagligFastTest.samletDosis8dage.executor": "Run",
+    "JUnit.DagligSkaevTest.executor": "Run",
     "JUnit.DosisTest.dosis.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -74,7 +70,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "dev2",
+    "git-widget-placeholder": "nyDev",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
@@ -92,17 +88,7 @@
       <recent name="ordination" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DosisTest.dosis">
-    <configuration name="DagligFastTest.doegnDosis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Medicinordination" />
-      <option name="PACKAGE_NAME" value="ordination" />
-      <option name="MAIN_CLASS_NAME" value="ordination.DagligFastTest" />
-      <option name="METHOD_NAME" value="doegnDosis" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.DagligSkaevTest">
     <configuration name="DagligFastTest.samletDosis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Medicinordination" />
       <option name="PACKAGE_NAME" value="ordination" />
@@ -133,6 +119,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DagligSkaevTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Medicinordination" />
+      <option name="PACKAGE_NAME" value="ordination" />
+      <option name="MAIN_CLASS_NAME" value="ordination.DagligSkaevTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DosisTest.dosis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Medicinordination" />
       <option name="PACKAGE_NAME" value="ordination" />
@@ -145,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DagligSkaevTest" />
         <item itemvalue="JUnit.DosisTest.dosis" />
         <item itemvalue="JUnit.DagligFastTest.samletDosis8dage" />
         <item itemvalue="JUnit.DagligFastTest.samletDosis1dag" />
         <item itemvalue="JUnit.DagligFastTest.samletDosis" />
-        <item itemvalue="JUnit.DagligFastTest.doegnDosis" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +163,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Medicinordination/Test/ordination/DagligFastTest.java</url>
           <line>56</line>
-          <properties class="ordination.DagligFastTest" method="samletDosis">
+          <properties class="ordination.DagligFastTest" method="samletDosis8dage">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>

@@ -29,7 +29,7 @@ public abstract class Controller {
 			pn = new PN(startDen,slutDen,patient,laegemiddel,antal);
 
 		} else {
-			throw new IllegalArgumentException("startDato er efter slutDato");
+			throw new IllegalArgumentException("startDato skal være før slutDato");
 		}
 
 		return pn;
@@ -53,7 +53,7 @@ public abstract class Controller {
 					natAntal);
 		}
 		else {
-			throw new  IllegalArgumentException ("startDato er efter slutDato");
+			throw new  IllegalArgumentException ("startDato skal være før slutDato");
 		}
 
 		return dagligFast;
@@ -74,7 +74,7 @@ public abstract class Controller {
 		if (startDen.isBefore(slutDen) && klokkeSlet.length == antalEnheder.length){
 			return new DagligSkaev(startDen, slutDen, patient, laegemiddel, klokkeSlet, antalEnheder);
 		} else {
-			throw new IllegalArgumentException("startDato er efter slutDato eller der ikke givet lige mange tider og antal enheder");
+			throw new IllegalArgumentException("startDato skal være før slutDato eller der ikke givet lige mange tider og antal enheder");
 		}
 	}
 
@@ -88,7 +88,7 @@ public abstract class Controller {
 		if (dato.isAfter(ordination.getStartDen().minusDays(1)) && dato.isBefore(ordination.getSlutDen().plusDays(1))){
 			ordination.givDosis(dato);
 		} else {
-			throw new IllegalArgumentException("Dato ikke inden for ordinations periode");
+			throw new IllegalArgumentException("Dato skal være inden for ordinations periode");
 		}
 	}
 

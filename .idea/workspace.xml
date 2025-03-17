@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c894035d-f16d-41bd-8688-468d547e18a8" name="Changes" comment="små rettelser">
-      <change afterPath="$PROJECT_DIR$/Medicinordination/Test/ordination/PNTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Medicinordination/Medicinordination.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Medicinordination/Medicinordination.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Medicinordination/src/ordination/PN.java" beforeDir="false" afterPath="$PROJECT_DIR$/Medicinordination/src/ordination/PN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Medicinordination/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Medicinordination/controller/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Medicinordination/ordination/PN.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Medicinordination/ordination/PN.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Medicinordination/Test/TomFil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Medicinordination/Test/controller/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Medicinordination/Test/controller/ControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Medicinordination/TomFil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Medicinordination/controller/ControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Medicinordination/controller/ControllerTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +48,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.App.executor": "Run",
+    "JUnit.ControllerTest.opretPNOrdination.executor": "Run",
+    "JUnit.ControllerTest.opretPNOrdination2.executor": "Run",
     "JUnit.PNTest.PN.executor": "Run",
     "JUnit.PNTest.executor": "Run",
     "JUnit.PNTest.givDosis13.executor": "Run",
@@ -65,10 +66,23 @@
       <recent name="C:\Users\André\Desktop\skole\Testprojektmedicinordination\Medicinordination\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PNTest">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.App" />
+  <component name="RunManager" selected="JUnit.ControllerTest.opretPNOrdination2">
+    <configuration name="ControllerTest.opretPNOrdination" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Medicinordination" />
+      <option name="PACKAGE_NAME" value="controller" />
+      <option name="MAIN_CLASS_NAME" value="controller.ControllerTest" />
+      <option name="METHOD_NAME" value="opretPNOrdination" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControllerTest.opretPNOrdination2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Medicinordination" />
+      <option name="PACKAGE_NAME" value="controller" />
+      <option name="MAIN_CLASS_NAME" value="controller.ControllerTest" />
+      <option name="METHOD_NAME" value="opretPNOrdination2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -104,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PNTest" />
-        <item itemvalue="JUnit.PNTest.givDosis13" />
+        <item itemvalue="JUnit.ControllerTest.opretPNOrdination2" />
+        <item itemvalue="JUnit.ControllerTest.opretPNOrdination" />
         <item itemvalue="JUnit.PNTest.PN" />
-        <item itemvalue="Application.App" />
-        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.PNTest.givDosis13" />
+        <item itemvalue="JUnit.PNTest" />
       </list>
     </recent_temporary>
   </component>
@@ -119,6 +133,7 @@
     <MESSAGE value="sammenhæng mellem patient, ordination og lægemiddel + daglig skæv" />
     <MESSAGE value="ordinationPNAnvendt() og opretDagligSkaevOrdination () i controller" />
     <MESSAGE value="små rettelser" />
-    <option name="LAST_COMMIT_MESSAGE" value="små rettelser" />
+    <MESSAGE value="PN" />
+    <option name="LAST_COMMIT_MESSAGE" value="PN" />
   </component>
 </project>

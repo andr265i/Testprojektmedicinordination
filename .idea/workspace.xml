@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c894035d-f16d-41bd-8688-468d547e18a8" name="Changes" comment="testklasse">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Medicinordination/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Medicinordination/controller/Controller.class" afterDir="false" />
-    </list>
+    <list default="true" id="c894035d-f16d-41bd-8688-468d547e18a8" name="Changes" comment="små rettelser" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -86,7 +76,6 @@
     <MESSAGE value="sammenhæng mellem patient, ordination og lægemiddel + daglig skæv" />
     <MESSAGE value="ordinationPNAnvendt() og opretDagligSkaevOrdination () i controller" />
     <MESSAGE value="små rettelser" />
-    <MESSAGE value="testklasse" />
-    <option name="LAST_COMMIT_MESSAGE" value="testklasse" />
+    <option name="LAST_COMMIT_MESSAGE" value="små rettelser" />
   </component>
 </project>

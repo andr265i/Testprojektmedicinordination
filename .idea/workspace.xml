@@ -6,12 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="c894035d-f16d-41bd-8688-468d547e18a8" name="Changes" comment="små rettelser">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Medicinordination/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Medicinordination/src/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Medicinordination/Medicinordination.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Medicinordination/Medicinordination.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Medicinordination/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Medicinordination/controller/Controller.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Merge.Settings">
     <option name="BRANCH" value="dev" />
@@ -30,12 +38,12 @@
     &quot;assignee&quot;: &quot;andr265i&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/andr265i/Testprojektmedicinordination.git",
-    "accountId": "eae332a2-10cc-499e-b2c5-23d81217cbe6"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/andr265i/Testprojektmedicinordination.git&quot;,
+    &quot;accountId&quot;: &quot;eae332a2-10cc-499e-b2c5-23d81217cbe6&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -48,8 +56,20 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.App.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.DagligSkaevTest.DagligSkaev.executor": "Run",
+    "JUnit.DagligSkaevTest.doegnDosis.executor": "Run",
+    "JUnit.DagligSkaevTest.executor": "Run",
+    "JUnit.DagligSkaevTest.opretDosis.executor": "Run",
+    "JUnit.DagligSkaevTest.samletDosis.executor": "Run",
+    "JUnit.DagligSkaevTest.samletDosis8Dage.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "dev1",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "Dev",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
@@ -60,19 +80,70 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\André\Desktop\skole\Testprojektmedicinordination\Medicinordination\src" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ordination" />
+    </key>
   </component>
-  <component name="RunManager">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.App" />
+  <component name="RunManager" selected="JUnit.DagligSkaevTest">
+    <configuration name="DagligSkaevTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Medicinordination" />
+      <option name="PACKAGE_NAME" value="ordination" />
+      <option name="MAIN_CLASS_NAME" value="ordination.DagligSkaevTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DagligSkaevTest.DagligSkaev" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Medicinordination" />
+      <option name="PACKAGE_NAME" value="ordination" />
+      <option name="MAIN_CLASS_NAME" value="ordination.DagligSkaevTest" />
+      <option name="METHOD_NAME" value="DagligSkaev" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DagligSkaevTest.doegnDosis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Medicinordination" />
+      <option name="PACKAGE_NAME" value="ordination" />
+      <option name="MAIN_CLASS_NAME" value="ordination.DagligSkaevTest" />
+      <option name="METHOD_NAME" value="doegnDosis" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DagligSkaevTest.samletDosis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Medicinordination" />
+      <option name="PACKAGE_NAME" value="ordination" />
+      <option name="MAIN_CLASS_NAME" value="ordination.DagligSkaevTest" />
+      <option name="METHOD_NAME" value="samletDosis" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DagligSkaevTest.samletDosis8Dage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Medicinordination" />
+      <option name="PACKAGE_NAME" value="ordination" />
+      <option name="MAIN_CLASS_NAME" value="ordination.DagligSkaevTest" />
+      <option name="METHOD_NAME" value="samletDosis8Dage" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
-        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.DagligSkaevTest" />
+        <item itemvalue="JUnit.DagligSkaevTest.doegnDosis" />
+        <item itemvalue="JUnit.DagligSkaevTest.samletDosis8Dage" />
+        <item itemvalue="JUnit.DagligSkaevTest.samletDosis" />
+        <item itemvalue="JUnit.DagligSkaevTest.DagligSkaev" />
       </list>
     </recent_temporary>
   </component>

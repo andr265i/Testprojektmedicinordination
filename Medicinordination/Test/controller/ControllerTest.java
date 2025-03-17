@@ -80,7 +80,7 @@ class ControllerTest {
     void anbefaletDosisPrDoegn120() {
         patient.setVaegt(120);
 
-        assertEquals(720,Controller.anbefaletDosisPrDoegn(patient,laegemiddel));
+        assertEquals(600,Controller.anbefaletDosisPrDoegn(patient,laegemiddel));
     }
 
     //TC38

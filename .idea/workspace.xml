@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c894035d-f16d-41bd-8688-468d547e18a8" name="Changes" comment="små rettelser">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Medicinordination/Test/TomFil.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Medicinordination/Test/controller/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Medicinordination/Test/controller/ControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Medicinordination/TomFil.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/Medicinordination/controller/ControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Medicinordination/controller/ControllerTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +17,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,13 +46,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.App.executor": "Run",
+    "JUnit.ControllerTest.executor": "Run",
     "JUnit.ControllerTest.opretPNOrdination.executor": "Run",
     "JUnit.ControllerTest.opretPNOrdination2.executor": "Run",
     "JUnit.PNTest.PN.executor": "Run",
     "JUnit.PNTest.executor": "Run",
     "JUnit.PNTest.givDosis13.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "dev",
+    "git-widget-placeholder": "main",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
@@ -66,7 +65,16 @@
       <recent name="C:\Users\André\Desktop\skole\Testprojektmedicinordination\Medicinordination\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ControllerTest.opretPNOrdination2">
+  <component name="RunManager" selected="JUnit.ControllerTest">
+    <configuration name="ControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Medicinordination" />
+      <option name="PACKAGE_NAME" value="controller" />
+      <option name="MAIN_CLASS_NAME" value="controller.ControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ControllerTest.opretPNOrdination" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Medicinordination" />
       <option name="PACKAGE_NAME" value="controller" />
@@ -83,15 +91,6 @@
       <option name="MAIN_CLASS_NAME" value="controller.ControllerTest" />
       <option name="METHOD_NAME" value="opretPNOrdination2" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PNTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Medicinordination" />
-      <option name="PACKAGE_NAME" value="ordination" />
-      <option name="MAIN_CLASS_NAME" value="ordination.PNTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -118,11 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ControllerTest" />
         <item itemvalue="JUnit.ControllerTest.opretPNOrdination2" />
         <item itemvalue="JUnit.ControllerTest.opretPNOrdination" />
         <item itemvalue="JUnit.PNTest.PN" />
         <item itemvalue="JUnit.PNTest.givDosis13" />
-        <item itemvalue="JUnit.PNTest" />
       </list>
     </recent_temporary>
   </component>

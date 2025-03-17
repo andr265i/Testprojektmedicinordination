@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c894035d-f16d-41bd-8688-468d547e18a8" name="Changes" comment="små rettelser">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Medicinordination/ordination/DagligFast.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Medicinordination/ordination/DagligFast.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Medicinordination/ordination/DagligSkaev.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Medicinordination/ordination/DagligSkaev.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Medicinordination/ordination/Dosis.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Medicinordination/ordination/Dosis.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Medicinordination/ordination/PN.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Medicinordination/ordination/PN.class" afterDir="false" />
-    </list>
+    <list default="true" id="c894035d-f16d-41bd-8688-468d547e18a8" name="Changes" comment="små rettelser" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

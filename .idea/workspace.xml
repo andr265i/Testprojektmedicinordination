@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c894035d-f16d-41bd-8688-468d547e18a8" name="Changes" comment="TC37">
+    <list default="true" id="c894035d-f16d-41bd-8688-468d547e18a8" name="Changes" comment="opretDagligSkaevOrdination()&#10;antalOrdinationerPrVægtPrLægemiddel2()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Medicinordination/Test/controller/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Medicinordination/Test/controller/ControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Medicinordination/controller/ControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Medicinordination/controller/ControllerTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +46,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.App.executor": "Run",
+    "JUnit.ControllerTest.antalOrdinationerPrVægtPrLægemiddel.executor": "Run",
     "JUnit.ControllerTest.executor": "Run",
     "JUnit.ControllerTest.opretPNOrdination.executor": "Run",
     "JUnit.ControllerTest.opretPNOrdination2.executor": "Run",
@@ -70,6 +72,16 @@
       <option name="PACKAGE_NAME" value="controller" />
       <option name="MAIN_CLASS_NAME" value="controller.ControllerTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControllerTest.antalOrdinationerPrVægtPrLægemiddel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Medicinordination" />
+      <option name="PACKAGE_NAME" value="controller" />
+      <option name="MAIN_CLASS_NAME" value="controller.ControllerTest" />
+      <option name="METHOD_NAME" value="antalOrdinationerPrVægtPrLægemiddel" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -104,27 +116,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PNTest.givDosis13" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Medicinordination" />
-      <option name="PACKAGE_NAME" value="ordination" />
-      <option name="MAIN_CLASS_NAME" value="ordination.PNTest" />
-      <option name="METHOD_NAME" value="givDosis13" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ControllerTest" />
+        <item itemvalue="JUnit.ControllerTest.antalOrdinationerPrVægtPrLægemiddel" />
         <item itemvalue="JUnit.ControllerTest.opretPNOrdination2" />
         <item itemvalue="JUnit.ControllerTest.opretPNOrdination" />
         <item itemvalue="JUnit.PNTest.PN" />
-        <item itemvalue="JUnit.PNTest.givDosis13" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
@@ -133,6 +146,8 @@
     <MESSAGE value="små rettelser" />
     <MESSAGE value="PN" />
     <MESSAGE value="TC37" />
-    <option name="LAST_COMMIT_MESSAGE" value="TC37" />
+    <MESSAGE value="opretDagligFastOrdination()&#10;ordinationPNAnvendt()" />
+    <MESSAGE value="opretDagligSkaevOrdination()&#10;antalOrdinationerPrVægtPrLægemiddel2()" />
+    <option name="LAST_COMMIT_MESSAGE" value="opretDagligSkaevOrdination()&#10;antalOrdinationerPrVægtPrLægemiddel2()" />
   </component>
 </project>

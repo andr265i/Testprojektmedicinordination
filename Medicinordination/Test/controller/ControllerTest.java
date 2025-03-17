@@ -18,8 +18,8 @@ class ControllerTest {
     @BeforeEach
     void setUp() {
         Controller.setStorage(new Storage());
-        patient = new Patient("12346-7890","Bo Hansen",70);
-        laegemiddel = new Laegemiddel("Acetylsalicylsyre",4,5,6, "Styk");
+        patient = Controller.opretPatient("12346-7890","Bo Hansen",70);
+        laegemiddel = Controller.opretLaegemiddel("Acetylsalicylsyre",4,5,6, "Styk");
     }
 
     //TC27
@@ -169,9 +169,9 @@ class ControllerTest {
     //TC44
     @Test
     void antalOrdinationerPrVægtPrLægemiddel() {
-        Patient patient1 = new Patient("123456-7890","Hans Hansen",70);
-        Patient patient3 = new Patient("123456-7890", "Jens Hansen", 81);
-        patient.setVaegt(71);
+        Patient patient1 = Controller.opretPatient("123456-7890","Hans Hansen",70);
+        Patient patient3 = Controller.opretPatient("123456-7890", "Jens Hansen", 81);
+        patient.setVaegt(60);
 
         Ordination ordination1 = Controller.opretPNOrdination(LocalDate.of(2025,3,13),LocalDate.of(2025,3,
                 15),patient1,laegemiddel,2);
@@ -183,14 +183,13 @@ class ControllerTest {
                 15),patient3,laegemiddel,2);
 
         assertEquals(2,Controller.antalOrdinationerPrVægtPrLægemiddel(60,80,laegemiddel));
-
     }
 
     //TC45
     @Test
     void antalOrdinationerPrVægtPrLægemiddel2() {
-        Patient patient1 = new Patient("123456-7890","Hans Hansen",70);
-        Patient patient3 = new Patient("123456-7890", "Jens Hansen", 81);
+        Patient patient1 = Controller.opretPatient("123456-7890","Hans Hansen",70);
+        Patient patient3 = Controller.opretPatient("123456-7890", "Jens Hansen", 81);
         patient.setVaegt(71);
 
         Ordination ordination1 = Controller.opretPNOrdination(LocalDate.of(2025,3,13),LocalDate.of(2025,3,
@@ -208,8 +207,8 @@ class ControllerTest {
     //TC46
     @Test
     void antalOrdinationerPrVægtPrLægemiddel3() {
-        Patient patient1 = new Patient("123456-7890","Hans Hansen",70);
-        Patient patient3 = new Patient("123456-7890", "Jens Hansen", 81);
+        Patient patient1 = Controller.opretPatient("123456-7890","Hans Hansen",70);
+        Patient patient3 = Controller.opretPatient("123456-7890", "Jens Hansen", 81);
         patient.setVaegt(71);
 
         Ordination ordination1 = Controller.opretPNOrdination(LocalDate.of(2025,3,13),LocalDate.of(2025,3,

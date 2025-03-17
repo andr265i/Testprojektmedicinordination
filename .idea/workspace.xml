@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c894035d-f16d-41bd-8688-468d547e18a8" name="Changes" comment="små rettelser" />
+    <list default="true" id="c894035d-f16d-41bd-8688-468d547e18a8" name="Changes" comment="små rettelser">
+      <change afterPath="$PROJECT_DIR$/Medicinordination/Test/ordination/PNTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Medicinordination/Medicinordination.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Medicinordination/Medicinordination.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Medicinordination/src/ordination/PN.java" beforeDir="false" afterPath="$PROJECT_DIR$/Medicinordination/src/ordination/PN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Medicinordination/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Medicinordination/controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Medicinordination/ordination/PN.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Medicinordination/ordination/PN.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,23 +46,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Run",
+    "JUnit.PNTest.PN.executor": "Run",
+    "JUnit.PNTest.executor": "Run",
+    "JUnit.PNTest.givDosis13.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "dev",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\André\Desktop\skole\Testprojektmedicinordination\Medicinordination\src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.PNTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gui.App" />
       <module name="Medicinordination" />
@@ -63,8 +73,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PNTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Medicinordination" />
+      <option name="PACKAGE_NAME" value="ordination" />
+      <option name="MAIN_CLASS_NAME" value="ordination.PNTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PNTest.PN" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Medicinordination" />
+      <option name="PACKAGE_NAME" value="ordination" />
+      <option name="MAIN_CLASS_NAME" value="ordination.PNTest" />
+      <option name="METHOD_NAME" value="PN" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PNTest.givDosis13" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Medicinordination" />
+      <option name="PACKAGE_NAME" value="ordination" />
+      <option name="MAIN_CLASS_NAME" value="ordination.PNTest" />
+      <option name="METHOD_NAME" value="givDosis13" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PNTest" />
+        <item itemvalue="JUnit.PNTest.givDosis13" />
+        <item itemvalue="JUnit.PNTest.PN" />
+        <item itemvalue="Application.App" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>

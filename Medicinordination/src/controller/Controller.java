@@ -71,10 +71,12 @@ public abstract class Controller {
 			LocalDate slutDen, Patient patient, Laegemiddel laegemiddel,
 			LocalTime[] klokkeSlet, double[] antalEnheder) {
 
-		if (startDen.isBefore(slutDen) && klokkeSlet.length == antalEnheder.length){
-			return new DagligSkaev(startDen, slutDen, patient, laegemiddel, klokkeSlet, antalEnheder);
+		if (klokkeSlet.length != antalEnheder.length){
+			throw new IllegalArgumentException("Der ikke givet lige mange tider og antal enheder");
+		} else if  (startDen.isAfter(slutDen)){
+			throw new IllegalArgumentException("startDato skal være før slutDato");
 		} else {
-			throw new IllegalArgumentException("startDato skal være før slutDato eller der ikke givet lige mange tider og antal enheder");
+			return new DagligSkaev(startDen, slutDen, patient, laegemiddel, klokkeSlet, antalEnheder);
 		}
 	}
 
